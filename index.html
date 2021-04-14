@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dwight VS 🤖 🖥  </title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <h1>Dwight<br><span class="smaller-font">VS</span><br>The Machine</h1>
+        </div>
+        <hr>
+        <div class="challenge">
+            <h2>Hello, Dwight Schrute. <br> It's me, the Computer, Dunder Mifflin's top paper salesman.</h2>
+            <h3>Care to challenge me?</h3>
+            <form>
+                <input type="text" id="response" placeholder="Bring it on, robot.">
+                <input type="submit" value="send">
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <section class="instructions">
+            <div class="wrapper">
+                <img src="./assets/computer.png" alt="Cartoon desktop computer, keyboard, and monitor, depicted with the Dunder Mifflin computer desktop backround from the TV series, The Office.">
+                <h3>Here's how to beat me... That is, if you can:</h3>
+                <ul>
+                    <li>This is a game of technique and precision. You'll have to bring your best clicking skills.
+                    </li>
+                    <li>Every second, I will make multiple sales. The amount of sales I make per second depends on the difficulty level that you choose:
+                        <ul>
+                            <li>EASY: 3 sales per second</li>
+                            <li>MEDIUM: 5 sales per second</li>
+                            <li>$#%&?!: 8 sales per second</li>
+                        </ul>
+                    </li>
+                    <li>As soon as you click the difficulty level that you prefer, I will begin to make paper sales, so don’t slack off.</li>
+                    <li>You can make your own sales by clicking the <span class="bold">SELL</span> button which will appear under your name (DwightKSchrute) once a level is selected. Each click is one sale.</li>
+                    <li>Whoever makes the most sales in 30 seconds is the superior salesperson.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="game">
+            <div class="wrapper">
+                <h3 class="ready">Are you ready?</h3>
+                <h3 class="timer">Timer: <span id="timer">30</span> seconds</h3>
+                <button class="easy">easy</button>
+                <button class="medium">medium</button>
+                <button class="hard">$#%&?!</button>
+                <div class="score-container">
+                    <h4 class="dunmiffSales"><span class="dunmiff">DunMiff/sys:</span> <br> <span id="comp-sales">0</span> sales</h4>
+                    <img src="./assets/dwight.gif"
+                        alt="Dwight, from the TV series, The Office, excitedly throwing his arms around, with captions 'YES! YES! YESYES!'"
+                        class="dwightHappy">
+                    <img src="./assets/dwight-sad.gif" alt="Dwight, from the TV series, The Office, crying during an interview." class="dwightSad">
+                    <img src="./assets/dwight-disappoint.gif" alt="Camera zooming into Dwight's face, showing disappointment (from the TV series, The Office)." class="dwightDisappoint">
+                    <div class="player-container">
+                        <h4><span class="dwight">DwightKSchrute:</span> <br><span id="dwight-sales">0</span> sales</h4>
+                        <button class="sell">sell</button>
+                    </div>
+                </div>
+                <button class="refresh">Try Again?</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="thanks">Thanks for playing!</p>
+        <p>Coded with 💙 by Nicole Wu. <br> Inspired by the popular TV series, <span class="italic">The Office</span>. <br> Created at Juno College, 2021.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
