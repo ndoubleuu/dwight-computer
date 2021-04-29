@@ -235,7 +235,7 @@ h1 {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
   margin: 0px;
-  font-family: "Impact", sans-serif;
+  font-family: "Impact", "Anton", sans-serif;
   text-transform: uppercase;
   font-size: 7.5rem;
   padding-top: 8px;
@@ -258,7 +258,7 @@ hr {
 }
 
 /* challenge */
-input[type=submit] {
+input[type="submit"] {
   font-family: "DotGothic16", sans-serif;
   text-transform: uppercase;
   background-color: white;
@@ -267,15 +267,15 @@ input[type=submit] {
   border-radius: 5px;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   cursor: pointer;
 }
 
-input[type=submit]:active {
+input[type="submit"]:active {
   background-color: lightgray;
 }
 
-input[type=text] {
+input[type="text"] {
   font-family: "DotGothic16", sans-serif;
   width: 300px;
   border: 1px solid navy;
@@ -364,6 +364,7 @@ ul {
 
 .sell {
   visibility: hidden;
+  touch-action: manipulation;
 }
 
 .show-sell {
@@ -488,7 +489,7 @@ footer {
 }
 
 @media (max-width: 526px) {
-  input[type=submit] {
+  input[type="submit"] {
     margin-top: 10px;
   }
 }
